@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:meditour/detail_screen.dart';
 import './model/hospital.dart'; // Import your Hospital model
 
-class HomeScreen extends StatelessWidget {
+class NearbyHospitals extends StatelessWidget {
   final List<Hospital> hospitals; // Replace with your list of hospitals
 
-  HomeScreen({required this.hospitals});
+  NearbyHospitals({required this.hospitals});
 
   @override
   Widget build(BuildContext context) {

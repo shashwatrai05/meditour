@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditour/homescreen.dart';
 import 'package:meditour/splash_screen.dart';
 
 void main() {

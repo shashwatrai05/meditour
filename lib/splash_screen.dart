@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:meditour/homepage.dart';
+import 'package:meditour/NearbyHospitals.dart';
 import 'package:meditour/model/list_hospital.dart';
+import 'package:meditour/onboarding_screens/onboardingscreen.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -14,13 +15,19 @@ class _SplashScreenState extends State<SplashScreen> {
   final ImageProvider logo = const AssetImage('assets/logo.jpeg');
   gotoHome() async {
     await Future.delayed(const Duration(seconds: 2));
+    // Navigator.pushReplacement(
+    //     context,
+    //     MaterialPageRoute(
+    //       builder: (context) =>  HomeScreen(
+    //     hospitals: generateDummyHospitals(), // Replace with your data source
+    //   ),
+    //     ));
     Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) =>  HomeScreen(
-        hospitals: generateDummyHospitals(), // Replace with your data source
-      ),
+          builder: (context) =>  OnboardingScreen()
         ));
+    
   }
   @override
   void initState() {
